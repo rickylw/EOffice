@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_letter">
+
+        <item
+            android:id="@+id/action_add_letter"
+            android:title="Buat Surat"
+            android:icon="@drawable/ic_add_file"
+            android:checkable="true"
+            />
+
+
+        <item
+            android:id="@+id/action_inbox"
+            android:title="Surat Masuk"
+            android:icon="@drawable/ic_inbox"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_outbox"
+            android:title="Surat Terkirim"
+            android:icon="@drawable/ic_outbox"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_archive"
+            android:title="Arsip Surat"
+            android:icon="@drawable/ic_arsip"
+            android:checkable="true"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_disposisition">
+
+        <item
+            android:id="@+id/action_add_disposition"
+            android:title="Buat Disposisi (Mandiri)"
+            android:icon="@drawable/ic_external_link"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_disposition_in"
+            android:title="Disposisi Masuk"
+            android:icon="@drawable/ic_down"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_disposition_out"
+            android:title="Disposisi Keluar"
+            android:icon="@drawable/ic_up"
+            android:checkable="true"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_setting">
+
+        <item
+            android:id="@+id/action_logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_logout"
+            />
+
+    </group>
+
+</menu>

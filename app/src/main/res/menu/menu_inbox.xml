@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        android:orderInCategory="100"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        android:iconTint="@color/white"
+        android:title="Filter"
+        android:orderInCategory="101"
+        app:iconTint="@color/white"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/filter_all"
+                android:title="Semua"
+                app:showAsAction="withText"
+                android:icon="@drawable/ic_all"
+                />
+
+            <item
+                android:id="@+id/filter_read"
+                android:title="Dibaca"
+                app:showAsAction="withText"
+                android:icon="@drawable/ic_seen"
+                />
+
+            <item
+                android:id="@+id/filter_unread"
+                android:title="Belum dibaca"
+                app:showAsAction="withText"
+                android:icon="@drawable/ic_unseen"
+                />
+
+            <item
+                android:id="@+id/filter_starred"
+                android:title="Starred"
+                app:showAsAction="withText"
+                android:icon="@drawable/ic_star"
+                />
+
+            <item
+                android:id="@+id/filter_dinas"
+                android:title="Dinas (Semua)"
+                app:showAsAction="withText"
+                android:icon="@drawable/ic_link"
+                >
+
+                <menu>
+
+
+                </menu>
+
+            </item>
+
+        </menu>
+
+    </item>
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/srl_disposition_in"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.disposition.DispositionInFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_disposition_in"
+        tools:listitem="@layout/custom_item_inbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
