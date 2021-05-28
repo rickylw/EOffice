@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Lampiran Surat Terkait"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_400"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subjek : Pengarahan"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu Kirim : 21 Mei 2021, 12:42:54"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Pengarahan Pesan"
+            android:textColor="@color/grey_800"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_400"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_print_lembar_disposisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print Lembar Disposisi"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/ic_print"
+            />
+
+        <Button
+            android:id="@+id/btn_print_lampiran_surat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print Lampiran Surat"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:drawableLeft="@drawable/ic_print"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -11,6 +11,7 @@ import com.example.eoffice.databinding.ActivityMainBinding
 import com.example.eoffice.util.Utilities
 import com.example.eoffice.view.fragment.disposition.AddDispositionFragment
 import com.example.eoffice.view.fragment.disposition.DispositionInFragment
+import com.example.eoffice.view.fragment.disposition.DispositionOutFragment
 import com.example.eoffice.view.fragment.letter.AddLetterFragment
 import com.example.eoffice.view.fragment.letter.InboxFragment
 import com.example.eoffice.view.fragment.letter.OutboxFragment
@@ -61,8 +62,7 @@ class MainActivity : AppCompatActivity() {
                     changeFragment(DispositionInFragment())
                 }
                 R.id.action_disposition_out -> {
-//                    changeFragment(DispositionOutFragment())
-                    Utilities.showToast(this, "DispositionOutFragment")
+                    changeFragment(DispositionOutFragment())
                 }
                 R.id.action_logout -> {
                     Utilities.showToast(this, "Logout")
