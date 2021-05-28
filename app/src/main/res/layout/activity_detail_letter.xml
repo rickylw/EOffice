@@ -24,7 +24,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/iv_starred"
                 android:maxLines="2"
                 android:text="Pengarahan"
                 android:textColor="@color/black"
@@ -56,19 +55,138 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Administrator"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:layout_marginBottom="5dp">
 
-            <TextView
+                <TextView
+                    android:id="@+id/tv_title_pengirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    android:text="Pengirim"
+                    android:textColor="@color/grey_800"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_pengirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="textEnd"
+                    android:text="Pengirim"
+                    android:textColor="@color/grey_700"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_receiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/primaryColor"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Administrator"
+                            android:drawablePadding="10dp"
+                            android:drawableEnd="@drawable/ic_eye"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@android:color/holo_green_dark"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2. Ricky"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="21 Mei 2021, 12:53:59"
-                android:textColor="@color/grey_800"
-                android:textSize="15sp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:text="Waktu Kirim"
+                    android:textColor="@color/grey_800"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_tanggal_kirim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="textEnd"
+                    android:text="27 Mei 2021, 16:11:09"
+                    android:textColor="@color/grey_700"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:text="Lampiran"
+                    android:textColor="@color/grey_800"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_lampiran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="textEnd"
+                    android:text="Lampiran"
+                    android:textColor="@color/primaryDarkColor"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

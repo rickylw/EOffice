@@ -1,11 +1,13 @@
 package com.example.eoffice.view.adapter
 
 import android.app.Activity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.eoffice.databinding.CustomItemInboxBinding
 import com.example.eoffice.databinding.CustomItemOutboxBinding
+import com.example.eoffice.view.activity.letter.DetailLetterActivity
 
 class OutboxAdapter(private val activity: Activity): RecyclerView.Adapter<OutboxAdapter.ViewHolder>() {
 
@@ -27,6 +29,12 @@ class OutboxAdapter(private val activity: Activity): RecyclerView.Adapter<Outbox
         holder.tvSubject.text = array[0]
         holder.tvTime.text = array[1]
         holder.tvMessage.text = array[2]
+
+        holder.itemView.setOnClickListener{
+            val intent = Intent(activity, DetailLetterActivity::class.java)
+            intent.putExtra("type", "out")
+            activity.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {

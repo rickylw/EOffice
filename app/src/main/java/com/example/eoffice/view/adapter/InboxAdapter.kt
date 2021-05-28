@@ -38,7 +38,9 @@ class InboxAdapter(private val activity: Activity): RecyclerView.Adapter<InboxAd
         }
 
         holder.itemView.setOnClickListener{
-            activity.startActivity(Intent(activity, DetailLetterActivity::class.java))
+            val intent = Intent(activity, DetailLetterActivity::class.java)
+            intent.putExtra("type", "in")
+            activity.startActivity(intent)
         }
     }
 

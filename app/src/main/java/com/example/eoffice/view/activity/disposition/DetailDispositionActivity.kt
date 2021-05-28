@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.example.eoffice.R
 import com.example.eoffice.databinding.ActivityDetailDispositionBinding
 import com.example.eoffice.databinding.CustomDialogLampiranTerkaitBinding
@@ -15,10 +16,22 @@ class DetailDispositionActivity : AppCompatActivity() {
 
     private var mBinding: ActivityDetailDispositionBinding? = null
 
+    private var type = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityDetailDispositionBinding.inflate(layoutInflater)
         setContentView(mBinding!!.root)
+
+        if(intent.hasExtra("type")){
+            type = intent.getStringExtra("type")!!
+        }
+
+        if (type == "out"){
+            mBinding!!.tvTitlePengirim.text = "Tujuan"
+            mBinding!!.llReceiver.visibility = View.VISIBLE
+            mBinding!!.tvPengirim.visibility = View.GONE
+        }
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setDisplayShowHomeEnabled(true)

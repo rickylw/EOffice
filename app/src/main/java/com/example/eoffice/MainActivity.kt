@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        changeFragment(DispositionInFragment())
+        changeFragment(DispositionOutFragment())
         mBinding!!.navigationView.menu.getItem(1).isChecked = true
 
         mBinding!!.navigationView.setNavigationItemSelectedListener {

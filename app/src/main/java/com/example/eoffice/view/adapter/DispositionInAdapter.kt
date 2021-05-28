@@ -38,7 +38,9 @@ class DispositionInAdapter(private val activity: Activity): RecyclerView.Adapter
         }
 
         holder.itemView.setOnClickListener{
-            activity.startActivity(Intent(activity, DetailDispositionActivity::class.java))
+            val intent = Intent(activity, DetailDispositionActivity::class.java)
+            intent.putExtra("type", "in")
+            activity.startActivity(intent)
         }
     }
 
